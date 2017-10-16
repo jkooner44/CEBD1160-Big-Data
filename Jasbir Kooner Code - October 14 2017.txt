@@ -1,0 +1,123 @@
+Distribution X Code:
+
+        G N U P L O T
+        Version 5.2 patchlevel 0    last modified 2017-09-01 
+
+        Copyright (C) 1986-1993, 1998, 2004, 2007-2017
+        Thomas Williams, Colin Kelley and many others
+
+        gnuplot home:     http://www.gnuplot.info
+        faq, bugs, etc:   type "help FAQ"
+        immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'wxt'
+gnuplot> set terminal png
+
+Terminal type is now 'png'
+Options are 'nocrop enhanced size 640,480 font "arial,12.0" '
+gnuplot> set output 'outputx.png'
+gnuplot> bin_width = .1
+gnuplot> set xlabel '<Population>'
+gnuplot> set title <'Distribution of X'>
+                   ^
+         invalid expression 
+
+gnuplot> set title '<Distribution of X>'  
+gnuplot> plot 'datasetx.csv'
+         warning: Cannot find or open file "datasetx.csv"
+         No data in plot
+
+gnuplot> load 'datasetx.csv'
+
+gnuplot> 57110
+         ^
+         "datasetx.csv", line 1: invalid command
+
+gnuplot> plot 'datasetx.csv'
+gnuplot> 
+
+
+
+
+Distribution of Y Code:
+
+
+        G N U P L O T
+        Version 5.2 patchlevel 0    last modified 2017-09-01 
+
+        Copyright (C) 1986-1993, 1998, 2004, 2007-2017
+        Thomas Williams, Colin Kelley and many others
+
+        gnuplot home:     http://www.gnuplot.info
+        faq, bugs, etc:   type "help FAQ"
+        immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'wxt'
+gnuplot> cd 'C:\Users\jkooner\Documents\Jasbir\Education\Concordia\CEBD1160\DataSet'
+gnuplot> set terminal png
+
+Terminal type is now 'png'
+Options are 'nocrop enhanced size 640,480 font "arial,12.0" '
+gnuplot> set output 'outputy.png'  
+gnuplot> bin_width = .1
+gnuplot> set xlabel '<Households>'  
+gnuplot> set title '<Distribution of Y'>
+                                        ^
+         invalid expression 
+
+gnuplot> set title '<Distribution of Y>' 
+gnuplot> load 'datasety.csv'
+
+gnuplot> 12971
+         ^
+         "datasety.csv", line 1: invalid command
+
+gnuplot> plot 'dataset.csv'
+         warning: Cannot find or open file "dataset.csv"
+         No data in plot
+
+gnuplot> plot 'datasety.csv'
+gnuplot> 
+
+
+
+Distribution of X and Y code:
+
+
+        G N U P L O T
+        Version 5.2 patchlevel 0    last modified 2017-09-01 
+
+        Copyright (C) 1986-1993, 1998, 2004, 2007-2017
+        Thomas Williams, Colin Kelley and many others
+
+        gnuplot home:     http://www.gnuplot.info
+        faq, bugs, etc:   type "help FAQ"
+        immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'wxt'
+gnuplot> cd 'C:\Users\jkooner\Documents\Jasbir\Education\Concordia\CEBD1160\DataSet'
+gnuplot> set terminal png
+
+Terminal type is now 'png'
+Options are 'nocrop enhanced size 640,480 font "arial,12.0" '
+gnuplot> set output 'outputy.png'  
+gnuplot> bin_width = .1
+gnuplot> set xlabel '<Households>'  
+gnuplot> set title '<Distribution of Y'>
+                                        ^
+         invalid expression 
+
+gnuplot> set title '<Distribution of Y>' 
+gnuplot> load 'datasety.csv'
+
+gnuplot> 12971
+         ^
+         "datasety.csv", line 1: invalid command
+
+gnuplot> plot 'dataset.csv'
+         warning: Cannot find or open file "dataset.csv"
+         No data in plot
+
+gnuplot> plot 'datasety.csv'
+gnuplot> 
+
