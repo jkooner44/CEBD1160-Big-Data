@@ -1,1400 +1,0 @@
-Windows PowerShell
-Copyright (C) 2016 Microsoft Corporation. All rights reserved.
-
-PS C:\Users\j_kooner> gnuplot
-gnuplot : The term 'gnuplot' is not recognized as the name of a cmdlet, function, script file, or operable program.
-Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
-At line:1 char:1
-+ gnuplot
-+ ~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (gnuplot:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
-
-PS C:\Users\j_kooner> docker gnuplot
-docker: 'gnuplot' is not a docker command.
-See 'docker --help'
-PS C:\Users\j_kooner> docker --help
-
-Usage:  docker COMMAND
-
-A self-sufficient runtime for containers
-
-Options:
-      --config string      Location of client config files (default
-                           "C:\Users\j_kooner\.docker")
-  -D, --debug              Enable debug mode
-      --help               Print usage
-  -H, --host list          Daemon socket(s) to connect to
-  -l, --log-level string   Set the logging level
-                           ("debug"|"info"|"warn"|"error"|"fatal")
-                           (default "info")
-      --tls                Use TLS; implied by --tlsverify
-      --tlscacert string   Trust certs signed only by this CA (default
-                           "C:\Users\j_kooner\.docker\ca.pem")
-      --tlscert string     Path to TLS certificate file (default
-                           "C:\Users\j_kooner\.docker\cert.pem")
-      --tlskey string      Path to TLS key file (default
-                           "C:\Users\j_kooner\.docker\key.pem")
-      --tlsverify          Use TLS and verify the remote
-  -v, --version            Print version information and quit
-
-Management Commands:
-  checkpoint  Manage checkpoints
-  config      Manage Docker configs
-  container   Manage containers
-  image       Manage images
-  network     Manage networks
-  node        Manage Swarm nodes
-  plugin      Manage plugins
-  secret      Manage Docker secrets
-  service     Manage services
-  stack       Manage Docker stacks
-  swarm       Manage Swarm
-  system      Manage Docker
-  volume      Manage volumes
-
-Commands:
-  attach      Attach local standard input, output, and error streams to a running container
-  build       Build an image from a Dockerfile
-  commit      Create a new image from a container's changes
-  cp          Copy files/folders between a container and the local filesystem
-  create      Create a new container
-  deploy      Deploy a new stack or update an existing stack
-  diff        Inspect changes to files or directories on a container's filesystem
-  events      Get real time events from the server
-  exec        Run a command in a running container
-  export      Export a container's filesystem as a tar archive
-  history     Show the history of an image
-  images      List images
-  import      Import the contents from a tarball to create a filesystem image
-  info        Display system-wide information
-  inspect     Return low-level information on Docker objects
-  kill        Kill one or more running containers
-  load        Load an image from a tar archive or STDIN
-  login       Log in to a Docker registry
-  logout      Log out from a Docker registry
-  logs        Fetch the logs of a container
-  pause       Pause all processes within one or more containers
-  port        List port mappings or a specific mapping for the container
-  ps          List containers
-  pull        Pull an image or a repository from a registry
-  push        Push an image or a repository to a registry
-  rename      Rename a container
-  restart     Restart one or more containers
-  rm          Remove one or more containers
-  rmi         Remove one or more images
-  run         Run a command in a new container
-  save        Save one or more images to a tar archive (streamed to STDOUT by default)
-  search      Search the Docker Hub for images
-  start       Start one or more stopped containers
-  stats       Display a live stream of container(s) resource usage statistics
-  stop        Stop one or more running containers
-  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
-  top         Display the running processes of a container
-  unpause     Unpause all processes within one or more containers
-  update      Update configuration of one or more containers
-  version     Show the Docker version information
-  wait        Block until one or more containers stop, then print their exit codes
-
-Run 'docker COMMAND --help' for more information on a command.
-PS C:\Users\j_kooner> docker
-
-Usage:  docker COMMAND
-
-A self-sufficient runtime for containers
-
-Options:
-      --config string      Location of client config files (default
-                           "C:\Users\j_kooner\.docker")
-  -D, --debug              Enable debug mode
-      --help               Print usage
-  -H, --host list          Daemon socket(s) to connect to
-  -l, --log-level string   Set the logging level
-                           ("debug"|"info"|"warn"|"error"|"fatal")
-                           (default "info")
-      --tls                Use TLS; implied by --tlsverify
-      --tlscacert string   Trust certs signed only by this CA (default
-                           "C:\Users\j_kooner\.docker\ca.pem")
-      --tlscert string     Path to TLS certificate file (default
-                           "C:\Users\j_kooner\.docker\cert.pem")
-      --tlskey string      Path to TLS key file (default
-                           "C:\Users\j_kooner\.docker\key.pem")
-      --tlsverify          Use TLS and verify the remote
-  -v, --version            Print version information and quit
-
-Management Commands:
-  checkpoint  Manage checkpoints
-  config      Manage Docker configs
-  container   Manage containers
-  image       Manage images
-  network     Manage networks
-  node        Manage Swarm nodes
-  plugin      Manage plugins
-  secret      Manage Docker secrets
-  service     Manage services
-  stack       Manage Docker stacks
-  swarm       Manage Swarm
-  system      Manage Docker
-  volume      Manage volumes
-
-Commands:
-  attach      Attach local standard input, output, and error streams to a running container
-  build       Build an image from a Dockerfile
-  commit      Create a new image from a container's changes
-  cp          Copy files/folders between a container and the local filesystem
-  create      Create a new container
-  deploy      Deploy a new stack or update an existing stack
-  diff        Inspect changes to files or directories on a container's filesystem
-  events      Get real time events from the server
-  exec        Run a command in a running container
-  export      Export a container's filesystem as a tar archive
-  history     Show the history of an image
-  images      List images
-  import      Import the contents from a tarball to create a filesystem image
-  info        Display system-wide information
-  inspect     Return low-level information on Docker objects
-  kill        Kill one or more running containers
-  load        Load an image from a tar archive or STDIN
-  login       Log in to a Docker registry
-  logout      Log out from a Docker registry
-  logs        Fetch the logs of a container
-  pause       Pause all processes within one or more containers
-  port        List port mappings or a specific mapping for the container
-  ps          List containers
-  pull        Pull an image or a repository from a registry
-  push        Push an image or a repository to a registry
-  rename      Rename a container
-  restart     Restart one or more containers
-  rm          Remove one or more containers
-  rmi         Remove one or more images
-  run         Run a command in a new container
-  save        Save one or more images to a tar archive (streamed to STDOUT by default)
-  search      Search the Docker Hub for images
-  start       Start one or more stopped containers
-  stats       Display a live stream of container(s) resource usage statistics
-  stop        Stop one or more running containers
-  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
-  top         Display the running processes of a container
-  unpause     Unpause all processes within one or more containers
-  update      Update configuration of one or more containers
-  version     Show the Docker version information
-  wait        Block until one or more containers stop, then print their exit codes
-
-Run 'docker COMMAND --help' for more information on a command.
-PS C:\Users\j_kooner> doxker images
-doxker : The term 'doxker' is not recognized as the name of a cmdlet, function, script file, or operable program.
-Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
-At line:1 char:1
-+ doxker images
-+ ~~~~~~
-    + CategoryInfo          : ObjectNotFound: (doxker:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
-
-PS C:\Users\j_kooner> docker images
-REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
-opencpu/rstudio        latest              4319f7e8840b        7 days ago          1.21GB
-<none>                 <none>              2d8e91c7e614        7 days ago          247MB
-cewp559fall2017_php7   latest              a71dd586479a        2 weeks ago         444MB
-<none>                 <none>              d68e43cc435c        3 weeks ago         209MB
-php                    7-apache            656ab268d1ef        3 weeks ago         392MB
-mysql                  latest              b4e78b89bcf3        4 weeks ago         412MB
-ubuntu                 14.04               dea1945146b9        5 weeks ago         188MB
-d4w/nsenter            latest              9e4f13a0901e        13 months ago       83.8kB
-PS C:\Users\j_kooner> docker ps -a
-CONTAINER ID        IMAGE                  COMMAND                  CREATED             STATUS                         P
-ORTS               NAMES
-c1652435b0bd        dea1945146b9           "/bin/bash"              43 minutes ago      Exited (127) 5 minutes ago
-                   goofy_ramanujan
-e36be00c1b6d        dea1945146b9           "/bin/bash"              45 minutes ago      Exited (0) 44 minutes ago
-                   jolly_clarke
-8c451210116c        dea1945146b9           "/bin/bash"              7 days ago          Exited (0) About an hour ago
-                   inspiring_mirzakhani
-8f4747484936        b4e78b89bcf3           "docker-entrypoint..."   7 days ago          Exited (0) 7 days ago
-                   amazing_shaw
-a898307d158c        b4e78b89bcf3           "docker-entrypoint..."   7 days ago          Exited (126) 7 days ago
-                   nifty_beaver
-f83cd0f405e9        b4e78b89bcf3           "docker-entrypoint..."   7 days ago          Exited (0) 7 days ago
-                   optimistic_euclid
-a1168c418ad9        b4e78b89bcf3           "docker-entrypoint..."   7 days ago          Exited (0) 7 days ago
-                   ecstatic_shirley
-362d654b5367        b4e78b89bcf3           "docker-entrypoint..."   7 days ago          Exited (0) 7 days ago
-                   musing_austin
-4169f34e8c84        4319f7e8840b           "/bin/bash"              7 days ago          Exited (0) 7 days ago
-                   fervent_spence
-953c23794209        4319f7e8840b           "/bin/bash"              7 days ago          Exited (0) 7 days ago
-                   hardcore_cray
-bdcfaf0dcb85        dea1945146b9           "/bin/bash"              7 days ago          Exited (0) 7 days ago
-                   amazing_mccarthy
-4b74bec1651d        dea1945146b9           "/bin/bash"              7 days ago          Exited (255) 19 hours ago
-                   practical_banach
-7d0a10bf151a        dea1945146b9           "/bin/bash"              7 days ago          Exited (0) 7 days ago
-                   suspicious_agnesi
-da55b0128ad5        opencpu/rstudio        "/bin/sh -c '/usr/..."   7 days ago          Exited (137) 7 days ago
-                   agitated_kepler
-1b460c226ee7        dea1945146b9           "/bin/bash"              7 days ago          Exited (0) 7 days ago
-                   sleepy_hypatia
-17fa452ae448        dea1945146b9           "/bin/bash"              7 days ago          Exited (0) 7 days ago
-                   condescending_minsky
-f02cde8c6d87        cewp559fall2017_php7   "docker-php-entryp..."   8 days ago          Exited (0) 7 days ago
-                   PHP7
-c88df15e5537        mysql                  "docker-entrypoint..."   8 days ago          Exited (0) 7 days ago
-                   MySQL
-7c4167e2ac65        dea1945146b9           "/bin/bash"              3 weeks ago         Exited (0) 7 days ago
-                   eloquent_euler
-PS C:\Users\j_kooner> docker start file:///C:/Users/j_kooner/Desktop/gnuplot/gnuplot_tutorial/Docker_Github_gnuplot.html
-
-error during connect: Post /v1.30/containers/file:/C:/Users/j_kooner/Desktop/gnuplot/gnuplot_tutorial/Docker_Github_gnup
-lot.html/start: unexpected redirect in response
-Error: failed to start containers: file:///C:/Users/j_kooner/Desktop/gnuplot/gnuplot_tutorial/Docker_Github_gnuplot.html
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/# ls
-CEBD1160-Big-Data  boot  etc   lib    media  opt   root  sbin  sys  usr
-bin                dev   home  lib64  mnt    proc  run   srv   tmp  var
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# ls
-GNUPLOT  data
-root@c1652435b0bd:/CEBD1160-Big-Data# cd GNUPLOT
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# ls
-datafilex.csv  datafilexy.csv  datafiley.csv
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-bash: gnuplot: command not found
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# sudo apt-get gnuplot-x11
-E: Invalid operation gnuplot-x11
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# sudo apt-get update
-Hit http://security.ubuntu.com trusty-security InRelease
-Ign http://archive.ubuntu.com trusty InRelease
-Get:1 http://archive.ubuntu.com trusty-updates InRelease [65.9 kB]
-Hit http://archive.ubuntu.com trusty-backports InRelease
-Hit http://archive.ubuntu.com trusty Release.gpg
-Hit http://archive.ubuntu.com trusty Release
-Hit http://security.ubuntu.com trusty-security/universe Sources
-Hit http://security.ubuntu.com trusty-security/main amd64 Packages
-Hit http://security.ubuntu.com trusty-security/restricted amd64 Packages
-Hit http://security.ubuntu.com trusty-security/universe amd64 Packages
-Hit http://security.ubuntu.com trusty-security/multiverse amd64 Packages
-Get:2 http://archive.ubuntu.com trusty-updates/universe Sources [242 kB]
-Get:3 http://archive.ubuntu.com trusty-updates/main amd64 Packages [1283 kB]
-Get:4 http://archive.ubuntu.com trusty-updates/restricted amd64 Packages [21.1 kB]
-Get:5 http://archive.ubuntu.com trusty-updates/universe amd64 Packages [555 kB]
-Get:6 http://archive.ubuntu.com trusty-updates/multiverse amd64 Packages [15.5 kB]
-Hit http://archive.ubuntu.com trusty-backports/main amd64 Packages
-Hit http://archive.ubuntu.com trusty-backports/restricted amd64 Packages
-Hit http://archive.ubuntu.com trusty-backports/universe amd64 Packages
-Hit http://archive.ubuntu.com trusty-backports/multiverse amd64 Packages
-Hit http://archive.ubuntu.com trusty/universe Sources
-Hit http://archive.ubuntu.com trusty/main amd64 Packages
-Hit http://archive.ubuntu.com trusty/restricted amd64 Packages
-Hit http://archive.ubuntu.com trusty/universe amd64 Packages
-Hit http://archive.ubuntu.com trusty/multiverse amd64 Packages
-Fetched 2182 kB in 7s (289 kB/s)
-Reading package lists... Done
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# sudo apt-get install git
-Reading package lists... Done
-Building dependency tree
-Reading state information... Done
-git is already the newest version.
-0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# sudo apt-get install gnuplot-x11
-Reading package lists... Done
-Building dependency tree
-Reading state information... Done
-The following extra packages will be installed:
-  aglfn fontconfig fontconfig-config fonts-dejavu-core hicolor-icon-theme
-  libatk1.0-0 libatk1.0-data libavahi-client3 libavahi-common-data
-  libavahi-common3 libcairo2 libcups2 libdatrie1 libdrm-intel1 libdrm-nouveau2
-  libdrm-radeon1 libelf1 libfontconfig1 libfreetype6 libgd3 libgdk-pixbuf2.0-0
-  libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa
-  libglib2.0-0 libglib2.0-data libgraphite2-3 libgtk2.0-0 libgtk2.0-bin
-  libgtk2.0-common libharfbuzz0b libice6 libjasper1 libjbig0 libjpeg-turbo8
-  libjpeg8 libllvm3.4 liblua5.1-0 libpango-1.0-0 libpangocairo-1.0-0
-  libpangoft2-1.0-0 libpciaccess0 libpixman-1-0 libsm6 libthai-data libthai0
-  libtiff5 libtxc-dxtn-s2tc0 libvpx1 libwxbase2.8-0 libwxgtk2.8-0 libx11-xcb1
-  libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-render0
-  libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1 libxdamage1 libxfixes3
-  libxi6 libxinerama1 libxml2 libxpm4 libxrandr2 libxrender1 libxshmfence1
-  libxxf86vm1 sgml-base shared-mime-info x11-common xml-core
-Suggested packages:
-  gnuplot-doc cups-common libgd-tools libglide3 librsvg2-common gvfs
-  libjasper-runtime ttf-baekmuk ttf-arphic-gbsn00lp ttf-arphic-bsmi00lp
-  ttf-arphic-gkai00mp ttf-arphic-bkai00mp pciutils sgml-base-doc debhelper
-The following NEW packages will be installed:
-  aglfn fontconfig fontconfig-config fonts-dejavu-core gnuplot-x11
-  hicolor-icon-theme libatk1.0-0 libatk1.0-data libavahi-client3
-  libavahi-common-data libavahi-common3 libcairo2 libcups2 libdatrie1
-  libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libelf1 libfontconfig1
-  libfreetype6 libgd3 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
-  libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa libglib2.0-0 libglib2.0-data
-  libgraphite2-3 libgtk2.0-0 libgtk2.0-bin libgtk2.0-common libharfbuzz0b
-  libice6 libjasper1 libjbig0 libjpeg-turbo8 libjpeg8 libllvm3.4 liblua5.1-0
-  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
-  libpixman-1-0 libsm6 libthai-data libthai0 libtiff5 libtxc-dxtn-s2tc0
-  libvpx1 libwxbase2.8-0 libwxgtk2.8-0 libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0
-  libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shm0 libxcb-sync1
-  libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6 libxinerama1
-  libxml2 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxxf86vm1 sgml-base
-  shared-mime-info x11-common xml-core
-0 upgraded, 77 newly installed, 0 to remove and 5 not upgraded.
-Need to get 24.5 MB of archives.
-After this operation, 115 MB of additional disk space will be used.
-Do you want to continue? [Y/n] y
-Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libelf1 amd64 0.158-0ubuntu5.2 [38.0 kB]
-Get:2 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libglib2.0-0 amd64 2.40.2-0ubuntu1 [1058 kB]
-Get:3 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libxml2 amd64 2.9.1+dfsg1-3ubuntu4.10 [573 kB]
-Get:4 http://archive.ubuntu.com/ubuntu/ trusty/main sgml-base all 1.26+nmu4ubuntu1 [12.5 kB]
-Get:5 http://archive.ubuntu.com/ubuntu/ trusty/main libatk1.0-data all 2.10.0-2ubuntu2 [13.7 kB]
-Get:6 http://archive.ubuntu.com/ubuntu/ trusty/main libatk1.0-0 amd64 2.10.0-2ubuntu2 [50.9 kB]
-Get:7 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libavahi-common-data amd64 0.6.31-4ubuntu1.1 [21.2 kB]
-Get:8 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libavahi-common3 amd64 0.6.31-4ubuntu1.1 [21.7 kB]
-Get:9 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libavahi-client3 amd64 0.6.31-4ubuntu1.1 [25.1 kB]
-Get:10 http://archive.ubuntu.com/ubuntu/ trusty/main fonts-dejavu-core all 2.34-1ubuntu1 [1024 kB]
-Get:11 http://archive.ubuntu.com/ubuntu/ trusty-updates/main fontconfig-config all 2.11.0-0ubuntu4.2 [47.4 kB]
-Get:12 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libfreetype6 amd64 2.5.2-1ubuntu2.8 [304 kB]
-Get:13 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libfontconfig1 amd64 2.11.0-0ubuntu4.2 [123 kB]
-Get:14 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libpixman-1-0 amd64 0.30.2-2ubuntu1.1 [225 kB]
-Get:15 http://archive.ubuntu.com/ubuntu/ trusty/main libxcb-render0 amd64 1.10-2ubuntu1 [11.0 kB]
-Get:16 http://archive.ubuntu.com/ubuntu/ trusty/main libxcb-shm0 amd64 1.10-2ubuntu1 [5432 B]
-Get:17 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libxrender1 amd64 1:0.9.8-1build0.14.04.1 [17.9 kB]
-Get:18 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libcairo2 amd64 1.13.0~20140204-0ubuntu1.1 [535 kB]
-Get:19 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libcups2 amd64 1.7.2-0ubuntu1.8 [179 kB]
-Get:20 http://archive.ubuntu.com/ubuntu/ trusty/main libdatrie1 amd64 0.2.8-1 [16.7 kB]
-Get:21 http://archive.ubuntu.com/ubuntu/ trusty/main libpciaccess0 amd64 0.13.2-1 [20.4 kB]
-Get:22 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libdrm-intel1 amd64 2.4.67-1ubuntu0.14.04.2 [55.3 kB]
-Get:23 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libdrm-nouveau2 amd64 2.4.67-1ubuntu0.14.04.2 [16.0 kB]
-Get:24 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libdrm-radeon1 amd64 2.4.67-1ubuntu0.14.04.2 [21.2 kB]
-Get:25 http://archive.ubuntu.com/ubuntu/ trusty/main libjpeg-turbo8 amd64 1.3.0-0ubuntu2 [104 kB]
-Get:26 http://archive.ubuntu.com/ubuntu/ trusty/main libjpeg8 amd64 8c-2ubuntu8 [2194 B]
-Get:27 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libjbig0 amd64 2.0-2ubuntu4.1 [26.1 kB]
-Get:28 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libtiff5 amd64 4.0.3-7ubuntu0.7 [144 kB]
-Get:29 http://archive.ubuntu.com/ubuntu/ trusty/main libvpx1 amd64 1.3.0-2 [556 kB]
-Get:30 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libxpm4 amd64 1:3.5.10-1ubuntu0.1 [33.2 kB]
-Get:31 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgd3 amd64 2.1.0-3ubuntu0.8 [123 kB]
-Get:32 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libjasper1 amd64 1.900.1-14ubuntu3.4 [130 kB]
-Get:33 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgdk-pixbuf2.0-common all 2.30.7-0ubuntu1.7 [9276 B]
-Get:34 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgdk-pixbuf2.0-0 amd64 2.30.7-0ubuntu1.7 [161 kB]
-Get:35 http://archive.ubuntu.com/ubuntu/ trusty/main libllvm3.4 amd64 1:3.4-1ubuntu3 [6540 kB]
-Get:36 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgl1-mesa-dri amd64 10.1.3-0ubuntu0.6 [4823 kB]
-Get:37 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libglapi-mesa amd64 10.1.3-0ubuntu0.6 [21.0 kB]
-Get:38 http://archive.ubuntu.com/ubuntu/ trusty/main libx11-xcb1 amd64 2:1.6.2-1ubuntu2 [9426 B]
-Get:39 http://archive.ubuntu.com/ubuntu/ trusty/main libxcb-dri2-0 amd64 1.10-2ubuntu1 [6710 B]
-Get:40 http://archive.ubuntu.com/ubuntu/ trusty/main libxcb-dri3-0 amd64 1.10-2ubuntu1 [5118 B]
-Get:41 http://archive.ubuntu.com/ubuntu/ trusty/main libxcb-glx0 amd64 1.10-2ubuntu1 [20.0 kB]
-Get:42 http://archive.ubuntu.com/ubuntu/ trusty/main libxcb-present0 amd64 1.10-2ubuntu1 [5254 B]
-Get:43 http://archive.ubuntu.com/ubuntu/ trusty/main libxcb-sync1 amd64 1.10-2ubuntu1 [8090 B]
-Get:44 http://archive.ubuntu.com/ubuntu/ trusty/main libxdamage1 amd64 1:1.1.4-1ubuntu1 [7612 B]
-Get:45 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libxfixes3 amd64 1:5.0.1-1ubuntu1.1 [10.4 kB]
-Get:46 http://archive.ubuntu.com/ubuntu/ trusty/main libxshmfence1 amd64 1.1-2 [4644 B]
-Get:47 http://archive.ubuntu.com/ubuntu/ trusty/main libxxf86vm1 amd64 1:1.1.3-1 [11.7 kB]
-Get:48 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgl1-mesa-glx amd64 10.1.3-0ubuntu0.6 [113 kB]
-Get:49 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgraphite2-3 amd64 1.3.10-0ubuntu0.14.04.1 [72.3 kB]
-Get:50 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgtk2.0-common all 2.24.23-0ubuntu1.4 [121 kB]
-Get:51 http://archive.ubuntu.com/ubuntu/ trusty/main libthai-data all 0.1.20-3 [130 kB]
-Get:52 http://archive.ubuntu.com/ubuntu/ trusty/main libthai0 amd64 0.1.20-3 [16.9 kB]
-Get:53 http://archive.ubuntu.com/ubuntu/ trusty-updates/main fontconfig amd64 2.11.0-0ubuntu4.2 [176 kB]
-Get:54 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libpango-1.0-0 amd64 1.36.3-1ubuntu1.1 [149 kB]
-Get:55 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libharfbuzz0b amd64 0.9.27-1ubuntu1.1 [127 kB]
-Get:56 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libpangoft2-1.0-0 amd64 1.36.3-1ubuntu1.1 [32.7 kB]
-Get:57 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libpangocairo-1.0-0 amd64 1.36.3-1ubuntu1.1 [20.0 kB]
-Get:58 http://archive.ubuntu.com/ubuntu/ trusty/main libxcomposite1 amd64 1:0.4.4-1 [7714 B]
-Get:59 http://archive.ubuntu.com/ubuntu/ trusty/main libxcursor1 amd64 1:1.1.14-1 [22.8 kB]
-Get:60 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libxi6 amd64 2:1.7.1.901-1ubuntu1.1 [27.9 kB]
-Get:61 http://archive.ubuntu.com/ubuntu/ trusty/main libxinerama1 amd64 2:1.1.3-1 [7908 B]
-Get:62 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libxrandr2 amd64 2:1.5.0-1~trusty1 [17.5 kB]
-Get:63 http://archive.ubuntu.com/ubuntu/ trusty/main shared-mime-info amd64 1.2-0ubuntu3 [415 kB]
-Get:64 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgtk2.0-0 amd64 2.24.23-0ubuntu1.4 [1739 kB]
-Get:65 http://archive.ubuntu.com/ubuntu/ trusty-updates/main x11-common all 1:7.7+1ubuntu8.1 [49.5 kB]
-Get:66 http://archive.ubuntu.com/ubuntu/ trusty/main libice6 amd64 2:1.0.8-2 [47.0 kB]
-Get:67 http://archive.ubuntu.com/ubuntu/ trusty-updates/main liblua5.1-0 amd64 5.1.5-5ubuntu0.1 [99.9 kB]
-Get:68 http://archive.ubuntu.com/ubuntu/ trusty/main libsm6 amd64 2:1.2.1-2 [18.1 kB]
-Get:69 http://archive.ubuntu.com/ubuntu/ trusty/universe libwxbase2.8-0 amd64 2.8.12.1+dfsg-2ubuntu2 [460 kB]
-Get:70 http://archive.ubuntu.com/ubuntu/ trusty/universe libwxgtk2.8-0 amd64 2.8.12.1+dfsg-2ubuntu2 [2371 kB]
-Get:71 http://archive.ubuntu.com/ubuntu/ trusty/main libtxc-dxtn-s2tc0 amd64 0~git20131104-1.1 [51.8 kB]
-Get:72 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libglib2.0-data all 2.40.2-0ubuntu1 [116 kB]
-Get:73 http://archive.ubuntu.com/ubuntu/ trusty/main xml-core all 0.13+nmu2 [23.3 kB]
-Get:74 http://archive.ubuntu.com/ubuntu/ trusty/universe aglfn all 1.7-3 [29.4 kB]
-Get:75 http://archive.ubuntu.com/ubuntu/ trusty/universe gnuplot-x11 amd64 4.6.4-2 [881 kB]
-Get:76 http://archive.ubuntu.com/ubuntu/ trusty/main hicolor-icon-theme all 0.13-1 [7140 B]
-Get:77 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgtk2.0-bin amd64 2.24.23-0ubuntu1.4 [9774 B]
-Fetched 24.5 MB in 12s (1921 kB/s)
-Extracting templates from packages: 100%
-Preconfiguring packages ...
-Selecting previously unselected package libelf1:amd64.
-(Reading database ... 13131 files and directories currently installed.)
-Preparing to unpack .../libelf1_0.158-0ubuntu5.2_amd64.deb ...
-Unpacking libelf1:amd64 (0.158-0ubuntu5.2) ...
-Selecting previously unselected package libglib2.0-0:amd64.
-Preparing to unpack .../libglib2.0-0_2.40.2-0ubuntu1_amd64.deb ...
-Unpacking libglib2.0-0:amd64 (2.40.2-0ubuntu1) ...
-Selecting previously unselected package libxml2:amd64.
-Preparing to unpack .../libxml2_2.9.1+dfsg1-3ubuntu4.10_amd64.deb ...
-Unpacking libxml2:amd64 (2.9.1+dfsg1-3ubuntu4.10) ...
-Selecting previously unselected package sgml-base.
-Preparing to unpack .../sgml-base_1.26+nmu4ubuntu1_all.deb ...
-Unpacking sgml-base (1.26+nmu4ubuntu1) ...
-Selecting previously unselected package libatk1.0-data.
-Preparing to unpack .../libatk1.0-data_2.10.0-2ubuntu2_all.deb ...
-Unpacking libatk1.0-data (2.10.0-2ubuntu2) ...
-Selecting previously unselected package libatk1.0-0:amd64.
-Preparing to unpack .../libatk1.0-0_2.10.0-2ubuntu2_amd64.deb ...
-Unpacking libatk1.0-0:amd64 (2.10.0-2ubuntu2) ...
-Selecting previously unselected package libavahi-common-data:amd64.
-Preparing to unpack .../libavahi-common-data_0.6.31-4ubuntu1.1_amd64.deb ...
-Unpacking libavahi-common-data:amd64 (0.6.31-4ubuntu1.1) ...
-Selecting previously unselected package libavahi-common3:amd64.
-Preparing to unpack .../libavahi-common3_0.6.31-4ubuntu1.1_amd64.deb ...
-Unpacking libavahi-common3:amd64 (0.6.31-4ubuntu1.1) ...
-Selecting previously unselected package libavahi-client3:amd64.
-Preparing to unpack .../libavahi-client3_0.6.31-4ubuntu1.1_amd64.deb ...
-Unpacking libavahi-client3:amd64 (0.6.31-4ubuntu1.1) ...
-Selecting previously unselected package fonts-dejavu-core.
-Preparing to unpack .../fonts-dejavu-core_2.34-1ubuntu1_all.deb ...
-Unpacking fonts-dejavu-core (2.34-1ubuntu1) ...
-Selecting previously unselected package fontconfig-config.
-Preparing to unpack .../fontconfig-config_2.11.0-0ubuntu4.2_all.deb ...
-Unpacking fontconfig-config (2.11.0-0ubuntu4.2) ...
-Selecting previously unselected package libfreetype6:amd64.
-Preparing to unpack .../libfreetype6_2.5.2-1ubuntu2.8_amd64.deb ...
-Unpacking libfreetype6:amd64 (2.5.2-1ubuntu2.8) ...
-Selecting previously unselected package libfontconfig1:amd64.
-Preparing to unpack .../libfontconfig1_2.11.0-0ubuntu4.2_amd64.deb ...
-Unpacking libfontconfig1:amd64 (2.11.0-0ubuntu4.2) ...
-Selecting previously unselected package libpixman-1-0:amd64.
-Preparing to unpack .../libpixman-1-0_0.30.2-2ubuntu1.1_amd64.deb ...
-Unpacking libpixman-1-0:amd64 (0.30.2-2ubuntu1.1) ...
-Selecting previously unselected package libxcb-render0:amd64.
-Preparing to unpack .../libxcb-render0_1.10-2ubuntu1_amd64.deb ...
-Unpacking libxcb-render0:amd64 (1.10-2ubuntu1) ...
-Selecting previously unselected package libxcb-shm0:amd64.
-Preparing to unpack .../libxcb-shm0_1.10-2ubuntu1_amd64.deb ...
-Unpacking libxcb-shm0:amd64 (1.10-2ubuntu1) ...
-Selecting previously unselected package libxrender1:amd64.
-Preparing to unpack .../libxrender1_1%3a0.9.8-1build0.14.04.1_amd64.deb ...
-Unpacking libxrender1:amd64 (1:0.9.8-1build0.14.04.1) ...
-Selecting previously unselected package libcairo2:amd64.
-Preparing to unpack .../libcairo2_1.13.0~20140204-0ubuntu1.1_amd64.deb ...
-Unpacking libcairo2:amd64 (1.13.0~20140204-0ubuntu1.1) ...
-Selecting previously unselected package libcups2:amd64.
-Preparing to unpack .../libcups2_1.7.2-0ubuntu1.8_amd64.deb ...
-Unpacking libcups2:amd64 (1.7.2-0ubuntu1.8) ...
-Selecting previously unselected package libdatrie1:amd64.
-Preparing to unpack .../libdatrie1_0.2.8-1_amd64.deb ...
-Unpacking libdatrie1:amd64 (0.2.8-1) ...
-Selecting previously unselected package libpciaccess0:amd64.
-Preparing to unpack .../libpciaccess0_0.13.2-1_amd64.deb ...
-Unpacking libpciaccess0:amd64 (0.13.2-1) ...
-Selecting previously unselected package libdrm-intel1:amd64.
-Preparing to unpack .../libdrm-intel1_2.4.67-1ubuntu0.14.04.2_amd64.deb ...
-Unpacking libdrm-intel1:amd64 (2.4.67-1ubuntu0.14.04.2) ...
-Selecting previously unselected package libdrm-nouveau2:amd64.
-Preparing to unpack .../libdrm-nouveau2_2.4.67-1ubuntu0.14.04.2_amd64.deb ...
-Unpacking libdrm-nouveau2:amd64 (2.4.67-1ubuntu0.14.04.2) ...
-Selecting previously unselected package libdrm-radeon1:amd64.
-Preparing to unpack .../libdrm-radeon1_2.4.67-1ubuntu0.14.04.2_amd64.deb ...
-Unpacking libdrm-radeon1:amd64 (2.4.67-1ubuntu0.14.04.2) ...
-Selecting previously unselected package libjpeg-turbo8:amd64.
-Preparing to unpack .../libjpeg-turbo8_1.3.0-0ubuntu2_amd64.deb ...
-Unpacking libjpeg-turbo8:amd64 (1.3.0-0ubuntu2) ...
-Selecting previously unselected package libjpeg8:amd64.
-Preparing to unpack .../libjpeg8_8c-2ubuntu8_amd64.deb ...
-Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
-Selecting previously unselected package libjbig0:amd64.
-Preparing to unpack .../libjbig0_2.0-2ubuntu4.1_amd64.deb ...
-Unpacking libjbig0:amd64 (2.0-2ubuntu4.1) ...
-Selecting previously unselected package libtiff5:amd64.
-Preparing to unpack .../libtiff5_4.0.3-7ubuntu0.7_amd64.deb ...
-Unpacking libtiff5:amd64 (4.0.3-7ubuntu0.7) ...
-Selecting previously unselected package libvpx1:amd64.
-Preparing to unpack .../libvpx1_1.3.0-2_amd64.deb ...
-Unpacking libvpx1:amd64 (1.3.0-2) ...
-Selecting previously unselected package libxpm4:amd64.
-Preparing to unpack .../libxpm4_1%3a3.5.10-1ubuntu0.1_amd64.deb ...
-Unpacking libxpm4:amd64 (1:3.5.10-1ubuntu0.1) ...
-Selecting previously unselected package libgd3:amd64.
-Preparing to unpack .../libgd3_2.1.0-3ubuntu0.8_amd64.deb ...
-Unpacking libgd3:amd64 (2.1.0-3ubuntu0.8) ...
-Selecting previously unselected package libjasper1:amd64.
-Preparing to unpack .../libjasper1_1.900.1-14ubuntu3.4_amd64.deb ...
-Unpacking libjasper1:amd64 (1.900.1-14ubuntu3.4) ...
-Selecting previously unselected package libgdk-pixbuf2.0-common.
-Preparing to unpack .../libgdk-pixbuf2.0-common_2.30.7-0ubuntu1.7_all.deb ...
-Unpacking libgdk-pixbuf2.0-common (2.30.7-0ubuntu1.7) ...
-Selecting previously unselected package libgdk-pixbuf2.0-0:amd64.
-Preparing to unpack .../libgdk-pixbuf2.0-0_2.30.7-0ubuntu1.7_amd64.deb ...
-Unpacking libgdk-pixbuf2.0-0:amd64 (2.30.7-0ubuntu1.7) ...
-Selecting previously unselected package libllvm3.4:amd64.
-Preparing to unpack .../libllvm3.4_1%3a3.4-1ubuntu3_amd64.deb ...
-Unpacking libllvm3.4:amd64 (1:3.4-1ubuntu3) ...
-Selecting previously unselected package libgl1-mesa-dri:amd64.
-Preparing to unpack .../libgl1-mesa-dri_10.1.3-0ubuntu0.6_amd64.deb ...
-Unpacking libgl1-mesa-dri:amd64 (10.1.3-0ubuntu0.6) ...
-Selecting previously unselected package libglapi-mesa:amd64.
-Preparing to unpack .../libglapi-mesa_10.1.3-0ubuntu0.6_amd64.deb ...
-Unpacking libglapi-mesa:amd64 (10.1.3-0ubuntu0.6) ...
-Selecting previously unselected package libx11-xcb1:amd64.
-Preparing to unpack .../libx11-xcb1_2%3a1.6.2-1ubuntu2_amd64.deb ...
-Unpacking libx11-xcb1:amd64 (2:1.6.2-1ubuntu2) ...
-Selecting previously unselected package libxcb-dri2-0:amd64.
-Preparing to unpack .../libxcb-dri2-0_1.10-2ubuntu1_amd64.deb ...
-Unpacking libxcb-dri2-0:amd64 (1.10-2ubuntu1) ...
-Selecting previously unselected package libxcb-dri3-0:amd64.
-Preparing to unpack .../libxcb-dri3-0_1.10-2ubuntu1_amd64.deb ...
-Unpacking libxcb-dri3-0:amd64 (1.10-2ubuntu1) ...
-Selecting previously unselected package libxcb-glx0:amd64.
-Preparing to unpack .../libxcb-glx0_1.10-2ubuntu1_amd64.deb ...
-Unpacking libxcb-glx0:amd64 (1.10-2ubuntu1) ...
-Selecting previously unselected package libxcb-present0:amd64.
-Preparing to unpack .../libxcb-present0_1.10-2ubuntu1_amd64.deb ...
-Unpacking libxcb-present0:amd64 (1.10-2ubuntu1) ...
-Selecting previously unselected package libxcb-sync1:amd64.
-Preparing to unpack .../libxcb-sync1_1.10-2ubuntu1_amd64.deb ...
-Unpacking libxcb-sync1:amd64 (1.10-2ubuntu1) ...
-Selecting previously unselected package libxdamage1:amd64.
-Preparing to unpack .../libxdamage1_1%3a1.1.4-1ubuntu1_amd64.deb ...
-Unpacking libxdamage1:amd64 (1:1.1.4-1ubuntu1) ...
-Selecting previously unselected package libxfixes3:amd64.
-Preparing to unpack .../libxfixes3_1%3a5.0.1-1ubuntu1.1_amd64.deb ...
-Unpacking libxfixes3:amd64 (1:5.0.1-1ubuntu1.1) ...
-Selecting previously unselected package libxshmfence1:amd64.
-Preparing to unpack .../libxshmfence1_1.1-2_amd64.deb ...
-Unpacking libxshmfence1:amd64 (1.1-2) ...
-Selecting previously unselected package libxxf86vm1:amd64.
-Preparing to unpack .../libxxf86vm1_1%3a1.1.3-1_amd64.deb ...
-Unpacking libxxf86vm1:amd64 (1:1.1.3-1) ...
-Selecting previously unselected package libgl1-mesa-glx:amd64.
-Preparing to unpack .../libgl1-mesa-glx_10.1.3-0ubuntu0.6_amd64.deb ...
-Unpacking libgl1-mesa-glx:amd64 (10.1.3-0ubuntu0.6) ...
-Selecting previously unselected package libgraphite2-3:amd64.
-Preparing to unpack .../libgraphite2-3_1.3.10-0ubuntu0.14.04.1_amd64.deb ...
-Unpacking libgraphite2-3:amd64 (1.3.10-0ubuntu0.14.04.1) ...
-Selecting previously unselected package libgtk2.0-common.
-Preparing to unpack .../libgtk2.0-common_2.24.23-0ubuntu1.4_all.deb ...
-Unpacking libgtk2.0-common (2.24.23-0ubuntu1.4) ...
-Selecting previously unselected package libthai-data.
-Preparing to unpack .../libthai-data_0.1.20-3_all.deb ...
-Unpacking libthai-data (0.1.20-3) ...
-Selecting previously unselected package libthai0:amd64.
-Preparing to unpack .../libthai0_0.1.20-3_amd64.deb ...
-Unpacking libthai0:amd64 (0.1.20-3) ...
-Selecting previously unselected package fontconfig.
-Preparing to unpack .../fontconfig_2.11.0-0ubuntu4.2_amd64.deb ...
-Unpacking fontconfig (2.11.0-0ubuntu4.2) ...
-Selecting previously unselected package libpango-1.0-0:amd64.
-Preparing to unpack .../libpango-1.0-0_1.36.3-1ubuntu1.1_amd64.deb ...
-Unpacking libpango-1.0-0:amd64 (1.36.3-1ubuntu1.1) ...
-Selecting previously unselected package libharfbuzz0b:amd64.
-Preparing to unpack .../libharfbuzz0b_0.9.27-1ubuntu1.1_amd64.deb ...
-Unpacking libharfbuzz0b:amd64 (0.9.27-1ubuntu1.1) ...
-Selecting previously unselected package libpangoft2-1.0-0:amd64.
-Preparing to unpack .../libpangoft2-1.0-0_1.36.3-1ubuntu1.1_amd64.deb ...
-Unpacking libpangoft2-1.0-0:amd64 (1.36.3-1ubuntu1.1) ...
-Selecting previously unselected package libpangocairo-1.0-0:amd64.
-Preparing to unpack .../libpangocairo-1.0-0_1.36.3-1ubuntu1.1_amd64.deb ...
-Unpacking libpangocairo-1.0-0:amd64 (1.36.3-1ubuntu1.1) ...
-Selecting previously unselected package libxcomposite1:amd64.
-Preparing to unpack .../libxcomposite1_1%3a0.4.4-1_amd64.deb ...
-Unpacking libxcomposite1:amd64 (1:0.4.4-1) ...
-Selecting previously unselected package libxcursor1:amd64.
-Preparing to unpack .../libxcursor1_1%3a1.1.14-1_amd64.deb ...
-Unpacking libxcursor1:amd64 (1:1.1.14-1) ...
-Selecting previously unselected package libxi6:amd64.
-Preparing to unpack .../libxi6_2%3a1.7.1.901-1ubuntu1.1_amd64.deb ...
-Unpacking libxi6:amd64 (2:1.7.1.901-1ubuntu1.1) ...
-Selecting previously unselected package libxinerama1:amd64.
-Preparing to unpack .../libxinerama1_2%3a1.1.3-1_amd64.deb ...
-Unpacking libxinerama1:amd64 (2:1.1.3-1) ...
-Selecting previously unselected package libxrandr2:amd64.
-Preparing to unpack .../libxrandr2_2%3a1.5.0-1~trusty1_amd64.deb ...
-Unpacking libxrandr2:amd64 (2:1.5.0-1~trusty1) ...
-Selecting previously unselected package shared-mime-info.
-Preparing to unpack .../shared-mime-info_1.2-0ubuntu3_amd64.deb ...
-Unpacking shared-mime-info (1.2-0ubuntu3) ...
-Selecting previously unselected package libgtk2.0-0:amd64.
-Preparing to unpack .../libgtk2.0-0_2.24.23-0ubuntu1.4_amd64.deb ...
-Unpacking libgtk2.0-0:amd64 (2.24.23-0ubuntu1.4) ...
-Selecting previously unselected package x11-common.
-Preparing to unpack .../x11-common_1%3a7.7+1ubuntu8.1_all.deb ...
-Unpacking x11-common (1:7.7+1ubuntu8.1) ...
-Selecting previously unselected package libice6:amd64.
-Preparing to unpack .../libice6_2%3a1.0.8-2_amd64.deb ...
-Unpacking libice6:amd64 (2:1.0.8-2) ...
-Selecting previously unselected package liblua5.1-0:amd64.
-Preparing to unpack .../liblua5.1-0_5.1.5-5ubuntu0.1_amd64.deb ...
-Unpacking liblua5.1-0:amd64 (5.1.5-5ubuntu0.1) ...
-Selecting previously unselected package libsm6:amd64.
-Preparing to unpack .../libsm6_2%3a1.2.1-2_amd64.deb ...
-Unpacking libsm6:amd64 (2:1.2.1-2) ...
-Selecting previously unselected package libwxbase2.8-0:amd64.
-Preparing to unpack .../libwxbase2.8-0_2.8.12.1+dfsg-2ubuntu2_amd64.deb ...
-Unpacking libwxbase2.8-0:amd64 (2.8.12.1+dfsg-2ubuntu2) ...
-Selecting previously unselected package libwxgtk2.8-0:amd64.
-Preparing to unpack .../libwxgtk2.8-0_2.8.12.1+dfsg-2ubuntu2_amd64.deb ...
-Unpacking libwxgtk2.8-0:amd64 (2.8.12.1+dfsg-2ubuntu2) ...
-Selecting previously unselected package libtxc-dxtn-s2tc0:amd64.
-Preparing to unpack .../libtxc-dxtn-s2tc0_0~git20131104-1.1_amd64.deb ...
-Unpacking libtxc-dxtn-s2tc0:amd64 (0~git20131104-1.1) ...
-Selecting previously unselected package libglib2.0-data.
-Preparing to unpack .../libglib2.0-data_2.40.2-0ubuntu1_all.deb ...
-Unpacking libglib2.0-data (2.40.2-0ubuntu1) ...
-Selecting previously unselected package xml-core.
-Preparing to unpack .../xml-core_0.13+nmu2_all.deb ...
-Unpacking xml-core (0.13+nmu2) ...
-Selecting previously unselected package aglfn.
-Preparing to unpack .../archives/aglfn_1.7-3_all.deb ...
-Unpacking aglfn (1.7-3) ...
-Selecting previously unselected package gnuplot-x11.
-Preparing to unpack .../gnuplot-x11_4.6.4-2_amd64.deb ...
-Unpacking gnuplot-x11 (4.6.4-2) ...
-Selecting previously unselected package hicolor-icon-theme.
-Preparing to unpack .../hicolor-icon-theme_0.13-1_all.deb ...
-Unpacking hicolor-icon-theme (0.13-1) ...
-Selecting previously unselected package libgtk2.0-bin.
-Preparing to unpack .../libgtk2.0-bin_2.24.23-0ubuntu1.4_amd64.deb ...
-Unpacking libgtk2.0-bin (2.24.23-0ubuntu1.4) ...
-Processing triggers for ureadahead (0.100.0-16) ...
-Setting up libelf1:amd64 (0.158-0ubuntu5.2) ...
-Setting up libglib2.0-0:amd64 (2.40.2-0ubuntu1) ...
-No schema files found: doing nothing.
-Setting up libxml2:amd64 (2.9.1+dfsg1-3ubuntu4.10) ...
-Setting up sgml-base (1.26+nmu4ubuntu1) ...
-Setting up libatk1.0-data (2.10.0-2ubuntu2) ...
-Setting up libatk1.0-0:amd64 (2.10.0-2ubuntu2) ...
-Setting up libavahi-common-data:amd64 (0.6.31-4ubuntu1.1) ...
-Setting up libavahi-common3:amd64 (0.6.31-4ubuntu1.1) ...
-Setting up libavahi-client3:amd64 (0.6.31-4ubuntu1.1) ...
-Setting up fonts-dejavu-core (2.34-1ubuntu1) ...
-Setting up fontconfig-config (2.11.0-0ubuntu4.2) ...
-Setting up libfreetype6:amd64 (2.5.2-1ubuntu2.8) ...
-Setting up libfontconfig1:amd64 (2.11.0-0ubuntu4.2) ...
-Setting up libpixman-1-0:amd64 (0.30.2-2ubuntu1.1) ...
-Setting up libxcb-render0:amd64 (1.10-2ubuntu1) ...
-Setting up libxcb-shm0:amd64 (1.10-2ubuntu1) ...
-Setting up libxrender1:amd64 (1:0.9.8-1build0.14.04.1) ...
-Setting up libcairo2:amd64 (1.13.0~20140204-0ubuntu1.1) ...
-Setting up libcups2:amd64 (1.7.2-0ubuntu1.8) ...
-Setting up libdatrie1:amd64 (0.2.8-1) ...
-Setting up libpciaccess0:amd64 (0.13.2-1) ...
-Setting up libdrm-intel1:amd64 (2.4.67-1ubuntu0.14.04.2) ...
-Setting up libdrm-nouveau2:amd64 (2.4.67-1ubuntu0.14.04.2) ...
-Setting up libdrm-radeon1:amd64 (2.4.67-1ubuntu0.14.04.2) ...
-Setting up libjpeg-turbo8:amd64 (1.3.0-0ubuntu2) ...
-Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
-Setting up libjbig0:amd64 (2.0-2ubuntu4.1) ...
-Setting up libtiff5:amd64 (4.0.3-7ubuntu0.7) ...
-Setting up libvpx1:amd64 (1.3.0-2) ...
-Setting up libxpm4:amd64 (1:3.5.10-1ubuntu0.1) ...
-Setting up libgd3:amd64 (2.1.0-3ubuntu0.8) ...
-Setting up libjasper1:amd64 (1.900.1-14ubuntu3.4) ...
-Setting up libgdk-pixbuf2.0-common (2.30.7-0ubuntu1.7) ...
-Setting up libgdk-pixbuf2.0-0:amd64 (2.30.7-0ubuntu1.7) ...
-Setting up libllvm3.4:amd64 (1:3.4-1ubuntu3) ...
-Setting up libgl1-mesa-dri:amd64 (10.1.3-0ubuntu0.6) ...
-Setting up libglapi-mesa:amd64 (10.1.3-0ubuntu0.6) ...
-Setting up libx11-xcb1:amd64 (2:1.6.2-1ubuntu2) ...
-Setting up libxcb-dri2-0:amd64 (1.10-2ubuntu1) ...
-Setting up libxcb-dri3-0:amd64 (1.10-2ubuntu1) ...
-Setting up libxcb-glx0:amd64 (1.10-2ubuntu1) ...
-Setting up libxcb-present0:amd64 (1.10-2ubuntu1) ...
-Setting up libxcb-sync1:amd64 (1.10-2ubuntu1) ...
-Setting up libxdamage1:amd64 (1:1.1.4-1ubuntu1) ...
-Setting up libxfixes3:amd64 (1:5.0.1-1ubuntu1.1) ...
-Setting up libxshmfence1:amd64 (1.1-2) ...
-Setting up libxxf86vm1:amd64 (1:1.1.3-1) ...
-Setting up libgl1-mesa-glx:amd64 (10.1.3-0ubuntu0.6) ...
-update-alternatives: using /usr/lib/x86_64-linux-gnu/mesa/ld.so.conf to provide /etc/ld.so.conf.d/x86_64-linux-gnu_GL.conf (x86_64-linux-gnu_gl_conf) in auto mode
-Setting up libgraphite2-3:amd64 (1.3.10-0ubuntu0.14.04.1) ...
-Setting up libgtk2.0-common (2.24.23-0ubuntu1.4) ...
-Setting up libthai-data (0.1.20-3) ...
-Setting up libthai0:amd64 (0.1.20-3) ...
-Setting up fontconfig (2.11.0-0ubuntu4.2) ...
-Regenerating fonts cache... done.
-Setting up libpango-1.0-0:amd64 (1.36.3-1ubuntu1.1) ...
-Setting up libharfbuzz0b:amd64 (0.9.27-1ubuntu1.1) ...
-Setting up libpangoft2-1.0-0:amd64 (1.36.3-1ubuntu1.1) ...
-Setting up libpangocairo-1.0-0:amd64 (1.36.3-1ubuntu1.1) ...
-Setting up libxcomposite1:amd64 (1:0.4.4-1) ...
-Setting up libxcursor1:amd64 (1:1.1.14-1) ...
-Setting up libxi6:amd64 (2:1.7.1.901-1ubuntu1.1) ...
-Setting up libxinerama1:amd64 (2:1.1.3-1) ...
-Setting up libxrandr2:amd64 (2:1.5.0-1~trusty1) ...
-Setting up shared-mime-info (1.2-0ubuntu3) ...
-Setting up libgtk2.0-0:amd64 (2.24.23-0ubuntu1.4) ...
-Setting up x11-common (1:7.7+1ubuntu8.1) ...
-invoke-rc.d: policy-rc.d denied execution of start.
-Setting up liblua5.1-0:amd64 (5.1.5-5ubuntu0.1) ...
-Setting up libwxbase2.8-0:amd64 (2.8.12.1+dfsg-2ubuntu2) ...
-Setting up libtxc-dxtn-s2tc0:amd64 (0~git20131104-1.1) ...
-update-alternatives: using /usr/lib/x86_64-linux-gnu/libtxc_dxtn_s2tc.so.0 to provide /usr/lib/x86_64-linux-gnu/libtxc_dxtn.so (libtxc-dxtn-x86_64-linux-gnu) in auto mode
-Setting up libglib2.0-data (2.40.2-0ubuntu1) ...
-Setting up xml-core (0.13+nmu2) ...
-Setting up aglfn (1.7-3) ...
-Setting up hicolor-icon-theme (0.13-1) ...
-Setting up libgtk2.0-bin (2.24.23-0ubuntu1.4) ...
-Processing triggers for ureadahead (0.100.0-16) ...
-Setting up libice6:amd64 (2:1.0.8-2) ...
-Setting up libsm6:amd64 (2:1.2.1-2) ...
-Setting up libwxgtk2.8-0:amd64 (2.8.12.1+dfsg-2ubuntu2) ...
-Setting up gnuplot-x11 (4.6.4-2) ...
-Processing triggers for libc-bin (2.19-0ubuntu6.13) ...
-Processing triggers for sgml-base (1.26+nmu4ubuntu1) ...
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set output 'outputx.png'
-gnuplot> set sample 50,50
-gnuplot> set title "X Plot"
-gnuplot> plo
-PS C:\Users\j_kooner>
-PS C:\Users\j_kooner> cd
-PS C:\Users\j_kooner> ls
-
-
-    Directory: C:\Users\j_kooner
-
-
-Mode                LastWriteTime         Length Name
-----                -------------         ------ ----
-d-----       2017-09-30  11:24 AM                .docker
-d-r---       2017-09-23   9:28 AM                Contacts
-d-r---       2017-10-14  10:02 AM                Desktop
-d-r---       2017-09-30   1:54 PM                Documents
-d-r---       2017-10-21   9:53 AM                Downloads
-d-r---       2017-09-23   9:28 AM                Favorites
-d-r---       2017-09-23   9:28 AM                Links
-d-r---       2017-09-23   9:28 AM                Music
-d-r---       2017-08-21   1:47 PM                OneDrive
-d-r---       2017-09-23   9:30 AM                Pictures
-d-r---       2017-09-23   9:28 AM                Saved Games
-d-r---       2017-09-23   9:28 AM                Searches
-d-r---       2017-09-23   9:28 AM                Videos
-
-
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-ls
-         ^
-         invalid command
-
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# ls
-datafilex.csv  datafilexy.csv  datafiley.csv  outputx.png
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set output 'outputx.png'
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5)
-gnuplot> set yrange [0:10]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-gnuplot> ls
-         ^
-         invalid command
-
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\User
-bash: docker: command not found
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-bash: docker: command not found
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# ls
-datafilex.csv  datafilexy.csv  datafiley.csv  outputx.png
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/#
-root@c1652435b0bd:/# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set output 'outputx.png'
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5)
-gnuplot> set yrange [20000,105000]
-                          ^
-         ':' or keyword 'to' expected
-
-gnuplot> set yrange [20000:105000]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-         warning: Skipping unreadable file "datafilex.csv"
-         No data in plot
-
-gnuplot> exit
-root@c1652435b0bd:/# docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-bash: docker: command not found
-root@c1652435b0bd:/# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/#
-root@c1652435b0bd:/# cd
-root@c1652435b0bd:~# ls
-root@c1652435b0bd:~# ls
-root@c1652435b0bd:~# ls
-root@c1652435b0bd:~# cd..
-bash: cd..: command not found
-root@c1652435b0bd:~# exit
-exit
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/#
-root@c1652435b0bd:/# ls
-CEBD1160-Big-Data  bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  outputx.png  proc  root  run  sbin  srv  sys  tmp  usr  var
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# cd GNUPLOT
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# ls
-datafilex.csv  datafilexy.csv  datafiley.csv  outputx.png
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set output 'outputx.png'
-gnuplot> set samples 50, 50
-gnuplot> set title "X Plot"
-gnuplot> plot sin(x)
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5 )
-gnuplot> set yrange [10000:105000]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/#
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# cd GNUPLOT
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set title "X Plot"
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5 )
-gnuplot> set yrange [10000:105000]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-?PNG
-
-IHDR  ?     ,?  5PLTE???   ????   ?  ??? ? ???@ ?? Ai???  ?@???0`??  @? ?????**?? @??   333MMMfff???????????????????22?????U??????????????  ?  d  ?"?".?W  ?  ?p  ?  ??? ??? ? ?????P????E ??r??z???k?????? ?? ???? ???P@Uk/? ??@?@??`??`??? ??@??@??`?
-?p???????????????????????|?@?? ??????___???????????v???      pHYs  ?  ??+  DATx???[??L?Ea?v????&l9#bVH???/?s?e??KW(Z??"I?$I?$I?$I?$I?$I?$?]?u??ZM/z]{???L?C??Y~??q?u???G?G??~????8???? ??r???H?n;?r?3 ?????\v??-`Y??m?\????E????5`5????z??x?.x?46?Pos??
-?jzP????n?[??2#????$?'??? ??wVl?4??6?zZn?v???/3r ??C????^??5E???uMU]?Uy?r???Vn??es??M???n}??????)L??S?+?[????0??8??2??m?z???????7opn????1???{?????zm7?????\Jw3?/Kn]"??Mk???h?y???n?y????????`??'f?V???k?!??u??X~????^????]hn{????l.M???o??\?#g????oe?f?@mu?2n???|8
-?R?]r?X????5n??j?Y\'Row???{???????????I?]????jH9?????4??_??8Xl7]?k??]?it???G??.?Yt??^7??n{|?{???b??????^???????s??a?;'??b?1Mu???nN?1??U??ah^?6???3?j\?r??M????M??n .?m]#??M????xv???_?]@??F??????K?Wf?r?f???????]???~???'>?_;?/??M??????*??.?nw??[mn??r????m?E
-?????w?e??n ???e<????Ki]??E??q?????Tv???q??????bs???????j???9?2{???r????Gq?<|?z?Q??M68??Y?6\?Y?'??/#,?~a???????s?L??????j|\U??g?_z Z?????7???Q?>?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(L?????K?e?+??E????&O??(?[?5n?L?z8Y??kdl}:{?I???~W}????4????+??F?]????2?]Q?5??  ??zA??0E????^V??x????-?????0J????,{??h=?D9[?Oa;n??(N?@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-?+D+????@???(?uP????0??AQ?:(??ZEQP??(e?????lJ????     *?.c????'D?2?~w?W')W???W????RO?'?ru *]??e???<!zA?w???'D)27?n=?T[o??
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ&??????)Y???'D/??z?M?T*U??ws?z??,w???NR?T?[G??iP??W??J?????7???]?R?m}|?yB?$?????0J???v?y Z???>?[/~?d??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa?N?V?0?c)Q????=u~@%???:??3?*U??r???j?*c?u??0??%_?r?-?n?????yB?*? ^???; ?*?.x??.c??2 =Q?Rdn?]v??Q???w??D+U?????Q?R?ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(L??e?7''R??p???lJ????J???yB?*? ??zxi?$?J?u???r{iWz????? ?+???yB???@??oi????9??6?D+U???j>?GqJjEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ&s?M??j???w??B?T???_?a???TY[/?q???F???>?#?Y??*g???????     ??r???+t *U???=??`?"c????(?[?0?^????h?z? ??8%???0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQ??3?VuQwäkNN?D[????]?Q??)Q???     *?.? ?=O???n}?;I?Rem??s?[W?i?O?[o??? T??Ov???u$???7!?'??yK????0J??@t???`??,?GqU?_??8%???0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-?yv??<5??T[/??R?t~@%??z??q?ggHU????+?D5J????~|g???r?'d?"???(U??q?? T??????w?J???y?y?%???2?<?d9OT??(D+Q?OBF?<??S"P??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP???zY??99??l??6?r???"s???R??2 =O?R?e ~d???.???????#?i??-???~?:?Z?8 ?????? ?_??x?0??k?9-??M=?Q?$I?$I?????Y?|???xaY??|n????x???=?9=?s??uQ??o?bJ???'???v???x??uwJ?N_[??#??OL????cg??z?????gz???n?????Y????/????O?g??*?????????k5~h????a_??Wi?,?,
-??^_??n:???}????x?.???C???O???=}Q????O??X??'?,w~?m???O-?-??/|?M?O_??%??(????a??????????.?????S?a~~??ì?NI?6??Do???;(N/??oBN-~[?_?=?x?????Hy??D/?N|?6??z?Gq?;???????7?GY???Ow??[lW?,???/??8I?$I?$I?$I?$I????.??kt?    IEND?B`?gnuplot> 0 ?ok???a?/?C?/{
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-?PNG
-
-IHDR  ?     ,?  5PLTE???   ????   ?  ??? ? ???@ ?? Ai???  ?@???0`??  @? ?????**?? @??   333MMMfff???????????????????22?????U??????????????  ?  d  ?"?".?W  ?  ?p  ?  ??? ??? ? ?????P????E ??r??z???k?????? ?? ???? ???P@Uk/? ??@?@??`??`??? ??@??@??`?
-?p???????????????????????|?@?? ??????___???????????v???      pHYs  ?  ??+  DATx???[??L?Ea?v????&l9#bVH???/?s?e??KW(Z??"I?$I?$I?$I?$I?$I?$?]?u??ZM/z]{???L?C??Y~??q?u???G?G??~????8???? ??r???H?n;?r?3 ?????\v??-`Y??m?\????E????5`5????z??x?.x?46?Pos??
-?jzP????n?[??2#????$?'??? ??wVl?4??6?zZn?v???/3r ??C????^??5E???uMU]?Uy?r???Vn??es??M???n}??????)L??S?+?[????0??8??2??m?z???????7opn????1???{?????zm7?????\Jw3?/Kn]"??Mk???h?y???n?y????????`??'f?V???k?!??u??X~????^????]hn{????l.M???o??\?#g????oe?f?@mu?2n???|8
-?R?]r?X????5n??j?Y\'Row???{???????????I?]????jH9?????4??_??8Xl7]?k??]?it???G??.?Yt??^7??n{|?{???b??????^???????s??a?;'??b?1Mu???nN?1??U??ah^?6???3?j\?r??M????M??n .?m]#??M????xv???_?]@??F??????K?Wf?r?f???????]???~???'>?_;?/??M??????*??.?nw??[mn??r????m?E
-?????w?e??n ???e<????Ki]??E??q?????Tv???q??????bs???????j???9?2{???r????Gq?<|?z?Q??M68??Y?6\?Y?'??/#,?~a???????s?L??????j|\U??g?_z Z?????7???Q?>?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(L?????K?e?+??E????&O??(?[?5n?L?z8Y??kdl}:{?I???~W}????4????+??F?]????2?]Q?5??  ??zA??0E????^V??x????-?????0J????,{??h=?D9[?Oa;n??(N?@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-?+D+????@???(?uP????0??AQ?:(??ZEQP??(e?????lJ????     *?.c????'D?2?~w?W')W???W????RO?'?ru *]??e???<!zA?w???'D)27?n=?T[o??
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ&??????)Y???'D/??z?M?T*U??ws?z??,w???NR?T?[G??iP??W??J?????7???]?R?m}|?yB?$?????0J???v?y Z???>?[/~?d??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa?N?V?0?c)Q????=u~@%???:??3?*U??r???j?*c?u??0??%_?r?-?n?????yB?*? ^???; ?*?.x??.c??2 =Q?Rdn?]v??Q???w??D+U?????Q?R?ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(L??e?7''R??p???lJ????J???yB?*? ??zxi?$?J?u???r{iWz????? ?+???yB???@??oi????9??6?D+U???j>?GqJjEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ&s?M??j???w??B?T???_?a???TY[/?q???F???>?#?Y??*g???????     ??r???+t *U???=??`?"c????(?[?0?^????h?z? ??8%???0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQ??3?VuQwäkNN?D[????]?Q??)Q???     *?.? ?=O???n}?;I?Rem??s?[W?i?O?[o??? T??Ov???u$???7!?'??yK????0J??@t???`??,?GqU?_??8%???0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-?yv??<5??T[/??R?t~@%??z??q?ggHU????+?D5J????~|g???r?'d?"???(U??q?? T??????w?J???y?y?%???2?<?d9OT??(D+Q?OBF?<??S"P??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP???zY??99??l??6?r???"s???R??2 =O?R?e ~d???.???????#?i??-???~?:?Z?8 ?????? ?_??x?0??k?9-??M=?Q?$I?$I?????Y?|???xaY??|n????x???=?9=?s??uQ??o?bJ???'???v???x??uwJ?N_[??#??OL????cg??z?????gz???n?????Y????/????O?g??*?????????k5~h????a_??Wi?,?,
-??^_??n:???}????x?.???C???O???=}Q????O??X??'?,w~?m???O-?-??/|?M?O_??%??(????a??????????.?????S?a~~??ì?NI?6??Do???;(N/??oBN-~[?_?=?x?????Hy??D/?N|?6??z?Gq?;???????7?GY???Ow??[lW?,???/??8I?$I?$I?$I?$I????.??kt?    IEND?B`?gnuplot> plot 'datafilex.csv' u
-sing (rounded($1)):(1) smooth frequency with boxes
-?PNG
-
-IHDR  ?     ,?  5PLTE???   ????   ?  ??? ? ???@ ?? Ai???  ?@???0`??  @? ?????**?? @??   333MMMfff???????????????????22?????U??????????????  ?  d  ?"?".?W  ?  ?p  ?  ??? ??? ? ?????P????E ??r??z???k?????? ?? ???? ???P@Uk/? ??@?@??`??`??? ??@??@??`?
-?p???????????????????????|?@?? ??????___???????????v???      pHYs  ?  ??+  DATx???[??L?Ea?v????&l9#bVH???/?s?e??KW(Z??"I?$I?$I?$I?$I?$I?$?]?u??ZM/z]{???L?C??Y~??q?u???G?G??~????8???? ??r???H?n;?r?3 ?????\v??-`Y??m?\????E????5`5????z??x?.x?46?Pos??
-?jzP????n?[??2#????$?'??? ??wVl?4??6?zZn?v???/3r ??C????^??5E???uMU]?Uy?r???Vn??es??M???n}??????)L??S?+?[????0??8??2??m?z???????7opn????1???{?????zm7?????\Jw3?/Kn]"??Mk???h?y???n?y????????`??'f?V???k?!??u??X~????^????]hn{????l.M???o??\?#g????oe?f?@mu?2n???|8
-?R?]r?X????5n??j?Y\'Row???{???????????I?]????jH9?????4??_??8Xl7]?k??]?it???G??.?Yt??^7??n{|?{???b??????^???????s??a?;'??b?1Mu???nN?1??U??ah^?6???3?j\?r??M????M??n .?m]#??M????xv???_?]@??F??????K?Wf?r?f???????]???~???'>?_;?/??M??????*??.?nw??[mn??r????m?E
-?????w?e??n ???e<????Ki]??E??q?????Tv???q??????bs???????j???9?2{???r????Gq?<|?z?Q??M68??Y?6\?Y?'??/#,?~a???????s?L??????j|\U??g?_z Z?????7???Q?>?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(L?????K?e?+??E????&O??(?[?5n?L?z8Y??kdl}:{?I???~W}????4????+??F?]????2?]Q?5??  ??zA??0E????^V??x????-?????0J????,{??h=?D9[?Oa;n??(N?@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-?+D+????@???(?uP????0??AQ?:(??ZEQP??(e?????lJ????     *?.c????'D?2?~w?W')W???W????RO?'?ru *]??e???<!zA?w???'D)27?n=?T[o??
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ&??????)Y???'D/??z?M?T*U??ws?z??,w???NR?T?[G??iP??W??J?????7???]?R?m}|?yB?$?????0J???v?y Z???>?[/~?d??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa?N?V?0?c)Q????=u~@%???:??3?*U??r???j?*c?u??0??%_?r?-?n?????yB?*? ^???; ?*?.x??.c??2 =Q?Rdn?]v??Q???w??D+U?????Q?R?ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(L??e?7''R??p???lJ????J???yB?*? ??zxi?$?J?u???r{iWz????? ?+???yB???@??oi????9??6?D+U???j>?GqJjEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ&s?M??j???w??B?T???_?a???TY[/?q???F???>?#?Y??*g???????     ??r???+t *U???=??`?"c????(?[?0?^????h?z? ??8%???0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQ??3?VuQwäkNN?D[????]?Q??)Q???     *?.? ?=O???n}?;I?Rem??s?[W?i?O?[o??? T??Ov???u$???7!?'??yK????0J??@t???`??,?GqU?_??8%???0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-?yv??<5??T[/??R?t~@%??z??q?ggHU????+?D5J????~|g???r?'d?"???(U??q?? T??????w?J???y?y?%???2?<?d9OT??(D+Q?OBF?<??S"P??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP????0??AQ?:(??ZEQP??(
-jEa@???(?uP???zY??99??l??6?r???"s???R??2 =O?R?e ~d???.???????#?i??-???~?:?Z?8 ?????? ?_??x?0??k?9-??M=?Q?$I?$I?????Y?|???xaY??|n????x???=?9=?s??uQ??o?bJ???'???v???x??uwJ?N_[??#??OL????cg??z?????gz???n?????Y????/????O?g??*?????????k5~h????a_??Wi?,?,
-??^_??n:???}????x?.???C???O???=}Q????O??X??'?,w~?m???O-?-??/|?M?O_??%??(????a??????????.?????S?a~~??ì?NI?6??Do???;(N/??oBN-~[?_?=?x?????Hy??D/?N|?6??z?Gq?;???????7?GY???Ow??[lW?,???/??8I?$I?$I?$I?$I????.??kt?    IEND?B`?gnuplot> 0 ?ok???a?/?C?/{
-gnuplot>
-gnuplot>
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner>
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/#
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# cd GNUPLOT
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# ls
-datafilex.csv  datafilexy.csv  datafiley.csv  outputx.png
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set output 'outputx.png'
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5 )
-gnuplot> set yrange [0:10]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-Closing outputx.png
-Failed to initialize wxWidgets.
-Terminal type set to 'unknown'
-         wxt init failure
-
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/#
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# cd GNUPLOT
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# ls
-datafilex.csv  datafilexy.csv  datafiley.csv  outputx.png
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set output 'outputx.png'
-gnuplot> set title "X Plot"
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5 )
-gnuplot> set yrange [0:105000]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/#
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# cd GNUPLOT
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set output 'outputx.png'
-gnuplot> set title "X Plot"
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5 )
-gnuplot> set yrange [0:1000]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-Closing outputx.png
-Failed to initialize wxWidgets.
-Terminal type set to 'unknown'
-         wxt init failure
-
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# set terminal png
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# ls
-datafilex.csv  datafilexy.csv  datafiley.csv  outputx.png
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set title '<X Plot>'
-gnuplot> set output 'outputx.png'
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5 )
-gnuplot> set yrange [0:500]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set title '<X Plot>'
-gnuplot> set output 'outputx.png'
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5 )
-gnuplot> set yrange [0:100]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-         warning: Skipping unreadable file "datafilex.csv"
-         No data in plot
-
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data# exit
-exit
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/#
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# cd GNUPLOT
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set title '<X Plot>'
-gnuplot> set output 'outputx.png'
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5 )
-gnuplot> set yrange [0:100]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/#
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# cd GNUPLOT
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set title '<X Plot>'
-gnuplot> set output 'outputx.png'
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5 )
-gnuplot> set yrange [0:10]
-gnuplot> plot 'datafilex.csv' using (rounded($1)):(1) smooth frequency with boxes
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputx.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\OutputX.png
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# cd GNUPLOT
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# ls
-datafilex.csv  datafilexy.csv  datafiley.csv  outputx.png
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set terminal png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set title '<Y Plot>'
-gnuplot> set output 'outputy.png'
-gnuplot> bin_width = .1
-gnuplot> bin_number(x) = floor(x/bin_width)
-gnuplot> rounded(x) = bin_width * ( bin_number(x) + 0.5 )
-gnuplot> set yrange [0:10]
-gnuplot> plot 'datafiley.csv' using (rounded($1)):(1) smooth frequency with boxes
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputy.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\Outputy.png
-PS C:\Users\j_kooner> docker start c1652435b0bd
-c1652435b0bd
-PS C:\Users\j_kooner> docker attach c1652435b0bd
-root@c1652435b0bd:/#
-root@c1652435b0bd:/# cd CEBD1160-Big-Data
-root@c1652435b0bd:/CEBD1160-Big-Data# cd GNUPLOT
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# ls
-datafilex.csv  datafilexy.csv  datafiley.csv  outputx.png  outputy.png
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# gnuplot
-
-        G N U P L O T
-        Version 4.6 patchlevel 4    last modified 2013-10-02
-        Build System: Linux x86_64
-
-        Copyright (C) 1986-1993, 1998, 2004, 2007-2013
-        Thomas Williams, Colin Kelley and many others
-
-        gnuplot home:     http://www.gnuplot.info
-        faq, bugs, etc:   type "help FAQ"
-        immediate help:   type "help"  (plot window: hit 'h')
-
-Terminal type set to 'wxt'
-gnuplot> set title '<X Y Plot>'
-gnuplot> set ylabel '<Y Households>'
-gnuplot> set xlabel '<X Population>'
-gnuplot> set grid
-gnuplot> set term png
-Terminal type set to 'png'
-Options are 'nocrop font "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf,12" fontscale 1.0 size 640,480 '
-gnuplot> set output 'outputxy.png'
-gnuplot> set datafile separator ","
-gnuplot> plot 'datafilexy.csv' using 1:2 with lines
-gnuplot> ls
-         ^
-         invalid command
-
-gnuplot> exit
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# ls
-datafilex.csv  datafilexy.csv  datafiley.csv  outputx.png  outputxy.png  outputy.png
-root@c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT# exit
-exit
-PS C:\Users\j_kooner> docker cp c1652435b0bd:/CEBD1160-Big-Data/GNUPLOT/outputxy.png C:\Users\j_kooner\Desktop\Personal\CEBD_1160\File\Outputxy.png
-PS C:\Users\j_kooner>
