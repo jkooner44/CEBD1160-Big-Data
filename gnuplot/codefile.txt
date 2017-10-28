@@ -1,15 +1,12 @@
+//GNUPLOT ASSIGNMENT
+//The objective of the assignement was to use GNUplot on the dataset that was selected in class 
+//and then to plot the x, y, and both xy in a graph. 
+//Once the output was created it had to then be uploaded to Github
+
 Windows PowerShell
 Copyright (C) 2016 Microsoft Corporation. All rights reserved.
 
-PS C:\Users\j_kooner> gnuplot
-gnuplot : The term 'gnuplot' is not recognized as the name of a cmdlet, function, script file, or operable program.
-Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
-At line:1 char:1
-+ gnuplot
-+ ~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (gnuplot:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
-
+//start gnuplot
 PS C:\Users\j_kooner> docker gnuplot
 docker: 'gnuplot' is not a docker command.
 See 'docker --help'
@@ -189,7 +186,7 @@ At line:1 char:1
 + ~~~~~~
     + CategoryInfo          : ObjectNotFound: (doxker:String) [], CommandNotFoundException
     + FullyQualifiedErrorId : CommandNotFoundException
-
+//run the docker for images
 PS C:\Users\j_kooner> docker images
 REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
 opencpu/rstudio        latest              4319f7e8840b        7 days ago          1.21GB
