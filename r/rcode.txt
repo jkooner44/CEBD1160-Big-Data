@@ -1,41 +1,26 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </html>
-> y <- read.csv("https://github.com/curran/data/blob/gh-pages/plotlyExamples/2014_ebola.csv")
-> names(y)
-[1] "X..DOCTYPE.html."
-> names(data)
-[1] "X..DOCTYPE.html."
-> Jas <- read.csv("https://github.com/curran/data/blob/gh-pages/plotlyExamples/2014_ebola.csv")
-> names(Jas)
-[1] "X..DOCTYPE.html."
-> Kooner <- read.csv("https://github.com/jkooner44/CEBD1160-Big-Data/blob/master/data/datafile.csv")
-> names(Kooner)
-[1] "X..DOCTYPE.html."
-> View(data)
-> JK <- read.csv("CEBD1160-Big-Data/data/datafile.csv")
-Error in file(file, "rt") : cannot open the connection
-In addition: Warning message:
-In file(file, "rt") :
-  cannot open file 'CEBD1160-Big-Data/data/datafile.csv': No such file or directory
-> JK<- read.csv("https://github.com/jkooner44/CEBD1160-Big-Data/blob/master/data/datafilexy.csv")
-> names(JK)
-[1] "X..DOCTYPE.html."
-> JK -< read.csv("https://raw.githubusercontent.com/jkooner44/CEBD1160-Big-Data/master/data/datafile.csv")
-Error: unexpected '<' in "JK -<"
-> JK -< read.csv("https://raw.githubusercontent.com/jkooner44/CEBD1160-Big-Data/master/data/datafile.csv")
-Error: unexpected '<' in "JK -<"
+##################################################
+# R Code Example                                 #
+##################################################
+
+
+################################################################################
+# The objective of the code was to take the dataset and to plot the x and      #
+# y values and then to upload it to the github                                 #
+################################################################################
+
+# read the data file into JK
 > JK <- read.csv("https://raw.githubusercontent.com/jkooner44/CEBD1160-Big-Data/master/data/datafile.csv")
+# list what is in JK
 > names(JK)
 [1] "Zip_Code"               "Total_Population"       "Median_Age"             "Total_Males"            "Total_Females"         
 [6] "Total_Households"       "Average_Household.Size"
-> hist(Total_Population)
-Error in hist(Total_Population) : object 'Total_Population' not found
-> hist(JK[,2])
-> $hist
-Error: unexpected '$' in "$"
-> hist(JK[,6])
-> ?hist
+# plot a histogram on Total Population field
 > hist(JK[,2], main="X Plot", xlab="Population")
+
+#Plot histogram on Households field
 > hist(JK[,6], main="Y Plot", xlab="Households")
+
+#Plot on both Populatiion and Households fields
 > ?plot
 > plot(JK[,2],JK[,6],main="X and Y Plot", 
 +      xlab="Population", ylab="Households", pch=19)
